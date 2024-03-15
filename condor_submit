@@ -1,0 +1,18 @@
+Universe   = vanilla
+Executable = ./exe.sh
+Arguments  = # Path to list file
+
+Log        = ./condor_log.log
+Output     = ./condor_output.out
+Error      = ./condor_error.error
+
+transfer_input_files = loadlib.h
+
+request_disk  = 100G
+request_memory = 16G
+request_cpus   = 4
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+getenv = true
+
+Queue
