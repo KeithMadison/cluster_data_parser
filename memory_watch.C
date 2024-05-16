@@ -6,6 +6,7 @@ size_t getCurrentRSS();
 
 size_t getPeakRSS(){
 
+// I don't think we need this...
 #elif (defined(_AIX) || defined(__TOS__AIX__)) || (defined(__sun__) || defined(__sun) || defined(sun) && (defined(__SVR4) || defined(__svr4__)))
     struct psinfo psinfo;
     int fd = -1;
